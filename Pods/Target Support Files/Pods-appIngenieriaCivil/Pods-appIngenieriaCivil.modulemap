@@ -1,0 +1,6 @@
+framework module Pods_appIngenieriaCivil {
+  umbrella header "Pods-appIngenieriaCivil-umbrella.h"
+
+  export *
+  module * { export * }
+}
