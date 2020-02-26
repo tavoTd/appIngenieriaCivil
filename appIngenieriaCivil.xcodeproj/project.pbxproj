@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		F1FF8B7223FF11BB006D50F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7123FF11BB006D50F5 /* Assets.xcassets */; };
 		F1FF8B7523FF11BB006D50F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7323FF11BB006D50F5 /* LaunchScreen.storyboard */; };
 		F1FF8B7D23FF15B7006D50F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */; };
+		FFD4A3322405A89400FA3246 /* MainContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4A3312405A89400FA3246 /* MainContainerViewController.swift */; };
+		FFD4A3352405AC0700FA3246 /* NewsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4A3342405AC0700FA3246 /* NewsMenuViewController.swift */; };
+		FFD4A3372405BD0700FA3246 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4A3362405BD0700FA3246 /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		F1FF8B7423FF11BB006D50F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1FF8B7623FF11BB006D50F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFD4A3312405A89400FA3246 /* MainContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerViewController.swift; sourceTree = "<group>"; };
+		FFD4A3342405AC0700FA3246 /* NewsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMenuViewController.swift; sourceTree = "<group>"; };
+		FFD4A3362405BD0700FA3246 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,6 @@
 				620B9C19417BA2D0AAA8775E /* Pods-appIngenieriaCivil.debug.xcconfig */,
 				B094E99386735DF78EF327DA /* Pods-appIngenieriaCivil.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +88,8 @@
 		F1FF8B6723FF11BA006D50F5 /* appIngenieriaCivil */ = {
 			isa = PBXGroup;
 			children = (
+				FFD4A3332405ABD300FA3246 /*  NewsMenuContainer */,
+				FFD4A3302405A86F00FA3246 /*  MainContainer */,
 				F1FF8B6823FF11BA006D50F5 /* AppDelegate.swift */,
 				F1FF8B6A23FF11BA006D50F5 /* SceneDelegate.swift */,
 				F1FF8B6C23FF11BA006D50F5 /* ViewController.swift */,
@@ -93,6 +100,23 @@
 				F1FF8B7623FF11BB006D50F5 /* Info.plist */,
 			);
 			path = appIngenieriaCivil;
+			sourceTree = "<group>";
+		};
+		FFD4A3302405A86F00FA3246 /*  MainContainer */ = {
+			isa = PBXGroup;
+			children = (
+				FFD4A3312405A89400FA3246 /* MainContainerViewController.swift */,
+			);
+			path = " MainContainer";
+			sourceTree = "<group>";
+		};
+		FFD4A3332405ABD300FA3246 /*  NewsMenuContainer */ = {
+			isa = PBXGroup;
+			children = (
+				FFD4A3342405AC0700FA3246 /* NewsMenuViewController.swift */,
+				FFD4A3362405BD0700FA3246 /* NewsCell.swift */,
+			);
+			path = " NewsMenuContainer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FF8B6D23FF11BA006D50F5 /* ViewController.swift in Sources */,
+				FFD4A3322405A89400FA3246 /* MainContainerViewController.swift in Sources */,
 				F1FF8B6923FF11BA006D50F5 /* AppDelegate.swift in Sources */,
+				FFD4A3352405AC0700FA3246 /* NewsMenuViewController.swift in Sources */,
+				FFD4A3372405BD0700FA3246 /* NewsCell.swift in Sources */,
 				F1FF8B6B23FF11BA006D50F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
