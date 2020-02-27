@@ -39,11 +39,6 @@ class NewsMenuViewController: UIViewController {
         loadingNews()
     }
     
-    //Cambia el color de los iconos (hora, bateria, ...) del iphone a blanco
-    override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
-    }
-    
     @IBAction func buttonMenuTapped(_ sender: Any) {
         
         //Manda a llamar la funcion que esta definida en el viewcontroller que se hace cargo

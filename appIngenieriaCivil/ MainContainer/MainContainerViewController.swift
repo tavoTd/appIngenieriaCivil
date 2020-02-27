@@ -21,6 +21,11 @@ class MainContainerViewController: UIViewController, NewsMenuDelegate {
 
     }
     
+    //Cambia el color de los iconos (hora, bateria, ...) del iphone a blanco
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
     //Accede a la propiedad de los viewcontroller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
