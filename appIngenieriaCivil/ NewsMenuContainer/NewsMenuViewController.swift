@@ -19,10 +19,16 @@ struct NewsContent{
 
 class NewsMenuViewController: UIViewController {
 
+    @IBOutlet weak var buttonToBack: UIButton!
+    @IBOutlet weak var constraintTopButtonBack: NSLayoutConstraint!
+    @IBOutlet weak var constraintRigthButtonBack: NSLayoutConstraint!
+    @IBOutlet weak var constraintLeftButtonBack: NSLayoutConstraint!
+    @IBOutlet weak var constraintBottomButtonBack: NSLayoutConstraint!
     @IBOutlet weak var newsTableView: UITableView!
     
     var delegate: SlideMenuDelegate? //permite acceder al protocolo NewsMenuDelegate
     var news = [NewsContent]()//crea un arreglo que contendra las noticias
+    var showButtonToBack = true //Controla si se muestra o no el boton
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +37,19 @@ class NewsMenuViewController: UIViewController {
         newsTableView.dataSource = self
         
         loadingNews()
+        
+        constraintTopButtonBack.constant = 0
+        constraintRigthButtonBack.constant = 0
+        constraintBottomButtonBack.constant = 0
+        constraintLeftButtonBack.constant = 0
+        buttonToBack.isHidden = true
     }
     
     @IBAction func buttonMenuTapped(_ sender: Any) {
         
         //Manda a llamar la funcion que esta definida en el viewcontroller que se hace cargo
+        showButtonToBack = !showButtonToBack
+        buttonToBack.isHidden = showButtonToBack
         delegate?.moveContainerToShowStudentMenu()
         
     }
@@ -74,7 +88,7 @@ extension NewsMenuViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsCell
-        
+         
     
         cell.imageNews?.image = UIImage(named: news[indexPath.row].image)
         cell.btnTitleNew?.setTitle(news[indexPath.row].title, for: .normal)
