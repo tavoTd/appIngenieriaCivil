@@ -353,7 +353,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="269" id="p1W-Xg-921"/>
                                                         </constraints>
-                                                        <mutableString key="text">Impartir la mejor licenciatura de Ingeniería Civil que se ofrece en México.
+                                                        <string key="text">Impartir la mejor licenciatura de Ingeniería Civil que se ofrece en México.
 Formar profesionales con:
 •excelente capacidad técnica
 •amplia integridad moral y
@@ -364,7 +364,7 @@ El profesionalismo y dominio técnico en conjunción con el trabajo de equipo,
 •honestidad
 •responsabilidad
 •entrega y
-•el orgullo de pertenecer a la institución.</mutableString>
+•el orgullo de pertenecer a la institución.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
