@@ -7,7 +7,15 @@
 //
 import UIKit
 
-class MainContainerViewController: UIViewController, NewsMenuDelegate {
+
+//Indica que funciones que tiene que ejecutar el viewcontroller
+protocol SlideMenuDelegate {
+    
+    func moveContainerToShowStudentMenu()
+}
+
+
+class MainContainerViewController: UIViewController, SlideMenuDelegate {
 
     @IBOutlet weak var containerStudentMenu: UIView!
     @IBOutlet weak var containerNewsMenu: UIView!

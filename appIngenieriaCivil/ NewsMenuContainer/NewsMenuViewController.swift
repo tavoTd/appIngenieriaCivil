@@ -8,12 +8,6 @@
 import UIKit
 import SafariServices
 
-//Indica que funciones que tiene que ejecutar el viewcontroller
-protocol NewsMenuDelegate {
-    
-    func moveContainerToShowStudentMenu()
-}
-
 //Contiene la información de las noticias
 struct NewsContent{
     
@@ -27,7 +21,7 @@ class NewsMenuViewController: UIViewController {
 
     @IBOutlet weak var newsTableView: UITableView!
     
-    var delegate: NewsMenuDelegate? //permite acceder al protocolo NewsMenuDelegate
+    var delegate: SlideMenuDelegate? //permite acceder al protocolo NewsMenuDelegate
     var news = [NewsContent]()//crea un arreglo que contendra las noticias
     
     override func viewDidLoad() {
@@ -97,7 +91,9 @@ extension NewsMenuViewController: UITableViewDelegate, UITableViewDataSource{
     
 }
 
+//Parte que se encarga de ejecutar las funciones de los botones de cada celda
 extension NewsMenuViewController: NewsCellDelegate{
+    
     func didTapTitleNews(url: String) {
         showSafariVC(for: url)
     }

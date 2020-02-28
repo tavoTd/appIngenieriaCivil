@@ -15,6 +15,7 @@
 		F1FF8B7223FF11BB006D50F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7123FF11BB006D50F5 /* Assets.xcassets */; };
 		F1FF8B7523FF11BB006D50F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7323FF11BB006D50F5 /* LaunchScreen.storyboard */; };
 		F1FF8B7D23FF15B7006D50F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */; };
+		FF1678B124097BB6007ABAA8 /* StudentMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1678B024097BB6007ABAA8 /* StudentMenuViewController.swift */; };
 		FFD4A3322405A89400FA3246 /* MainContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4A3312405A89400FA3246 /* MainContainerViewController.swift */; };
 		FFD4A3352405AC0700FA3246 /* NewsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4A3342405AC0700FA3246 /* NewsMenuViewController.swift */; };
 		FFD4A3372405BD0700FA3246 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4A3362405BD0700FA3246 /* NewsCell.swift */; };
@@ -33,6 +34,7 @@
 		F1FF8B7423FF11BB006D50F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1FF8B7623FF11BB006D50F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF1678B024097BB6007ABAA8 /* StudentMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMenuViewController.swift; sourceTree = "<group>"; };
 		FFD4A3312405A89400FA3246 /* MainContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerViewController.swift; sourceTree = "<group>"; };
 		FFD4A3342405AC0700FA3246 /* NewsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMenuViewController.swift; sourceTree = "<group>"; };
 		FFD4A3362405BD0700FA3246 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		F1FF8B6723FF11BA006D50F5 /* appIngenieriaCivil */ = {
 			isa = PBXGroup;
 			children = (
+				FF1678AF24097B91007ABAA8 /*  StudentMenuContainer */,
 				FFD4A3332405ABD300FA3246 /*  NewsMenuContainer */,
 				FFD4A3302405A86F00FA3246 /*  MainContainer */,
 				F1FF8B6823FF11BA006D50F5 /* AppDelegate.swift */,
@@ -100,6 +103,14 @@
 				F1FF8B7623FF11BB006D50F5 /* Info.plist */,
 			);
 			path = appIngenieriaCivil;
+			sourceTree = "<group>";
+		};
+		FF1678AF24097B91007ABAA8 /*  StudentMenuContainer */ = {
+			isa = PBXGroup;
+			children = (
+				FF1678B024097BB6007ABAA8 /* StudentMenuViewController.swift */,
+			);
+			path = " StudentMenuContainer";
 			sourceTree = "<group>";
 		};
 		FFD4A3302405A86F00FA3246 /*  MainContainer */ = {
@@ -236,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FF8B6D23FF11BA006D50F5 /* ViewController.swift in Sources */,
+				FF1678B124097BB6007ABAA8 /* StudentMenuViewController.swift in Sources */,
 				FFD4A3322405A89400FA3246 /* MainContainerViewController.swift in Sources */,
 				F1FF8B6923FF11BA006D50F5 /* AppDelegate.swift in Sources */,
 				FFD4A3352405AC0700FA3246 /* NewsMenuViewController.swift in Sources */,
