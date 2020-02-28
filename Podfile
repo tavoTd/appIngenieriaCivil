@@ -8,4 +8,5 @@ target 'appIngenieriaCivil' do
   # Pods for appIngenieriaCivil
   pod 'Firebase/Analytics'
   pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Auth' #autenticación
 end

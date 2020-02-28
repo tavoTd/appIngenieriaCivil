@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		F1FF8B7223FF11BB006D50F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7123FF11BB006D50F5 /* Assets.xcassets */; };
 		F1FF8B7523FF11BB006D50F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7323FF11BB006D50F5 /* LaunchScreen.storyboard */; };
 		F1FF8B7D23FF15B7006D50F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */; };
+		FE0B60C22408170600B62B45 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0B60C12408170600B62B45 /* Alert.swift */; };
+		FE0B60CD240834FF00B62B45 /* HideShowPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0B60CB240834FF00B62B45 /* HideShowPasswordTextField.swift */; };
+		FE0B60CE240834FF00B62B45 /* PasswordToggleVisibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0B60CC240834FF00B62B45 /* PasswordToggleVisibilityView.swift */; };
+		FEE55C0A240420F600E8D5E3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE55C09240420F600E8D5E3 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		F1FF8B7423FF11BB006D50F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1FF8B7623FF11BB006D50F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE0B60C12408170600B62B45 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		FE0B60CB240834FF00B62B45 /* HideShowPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HideShowPasswordTextField.swift; path = ../../appIngenieriaprueba/appIngenieria/HideShowPasswordTextField.swift; sourceTree = "<group>"; };
+		FE0B60CC240834FF00B62B45 /* PasswordToggleVisibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PasswordToggleVisibilityView.swift; path = ../../appIngenieriaprueba/appIngenieria/PasswordToggleVisibilityView.swift; sourceTree = "<group>"; };
+		FEE55C09240420F600E8D5E3 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +58,6 @@
 				620B9C19417BA2D0AAA8775E /* Pods-appIngenieriaCivil.debug.xcconfig */,
 				B094E99386735DF78EF327DA /* Pods-appIngenieriaCivil.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,13 +91,17 @@
 			isa = PBXGroup;
 			children = (
 				F1FF8B6823FF11BA006D50F5 /* AppDelegate.swift */,
+				FE0B60C12408170600B62B45 /* Alert.swift */,
 				F1FF8B6A23FF11BA006D50F5 /* SceneDelegate.swift */,
 				F1FF8B6C23FF11BA006D50F5 /* ViewController.swift */,
-				F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */,
+				FEE55C09240420F600E8D5E3 /* SignInViewController.swift */,
 				F1FF8B6E23FF11BA006D50F5 /* Main.storyboard */,
-				F1FF8B7123FF11BB006D50F5 /* Assets.xcassets */,
 				F1FF8B7323FF11BB006D50F5 /* LaunchScreen.storyboard */,
 				F1FF8B7623FF11BB006D50F5 /* Info.plist */,
+				F1FF8B7C23FF15B7006D50F5 /* GoogleService-Info.plist */,
+				FE0B60CB240834FF00B62B45 /* HideShowPasswordTextField.swift */,
+				FE0B60CC240834FF00B62B45 /* PasswordToggleVisibilityView.swift */,
+				F1FF8B7123FF11BB006D50F5 /* Assets.xcassets */,
 			);
 			path = appIngenieriaCivil;
 			sourceTree = "<group>";
@@ -211,9 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE55C0A240420F600E8D5E3 /* SignInViewController.swift in Sources */,
+				FE0B60CD240834FF00B62B45 /* HideShowPasswordTextField.swift in Sources */,
 				F1FF8B6D23FF11BA006D50F5 /* ViewController.swift in Sources */,
 				F1FF8B6923FF11BA006D50F5 /* AppDelegate.swift in Sources */,
+				FE0B60C22408170600B62B45 /* Alert.swift in Sources */,
 				F1FF8B6B23FF11BA006D50F5 /* SceneDelegate.swift in Sources */,
+				FE0B60CE240834FF00B62B45 /* PasswordToggleVisibilityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
